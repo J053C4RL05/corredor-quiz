@@ -22,6 +22,7 @@ export const QuizProvider = ({ children }) => {
     endTime: null,
     category: null, // if 'category' type
     failedQuestions: []
+  });
 
   // Calculate stats for home view
   const categories = {};
