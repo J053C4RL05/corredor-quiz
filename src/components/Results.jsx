@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuiz } from '../context/QuizContext';
 
 export default function Results() {
-  const { history, setView } = useQuiz();
+  const { history, setView, currentQuiz, startRetryFailed } = useQuiz();
   const lastResult = history[0];
 
   if (!lastResult) return null;
@@ -27,9 +27,17 @@ export default function Results() {
           {passed ? '¡Felicidades, has aprobado!' : 'Necesitas un mínimo de 70% para aprobar. ¡Sigue practicando!'}
         </p>
 
-        <button className="btn-primary" onClick={() => setView('home')}>
-          Volver al Inicio
-        </button>
+        <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>
+          <button className="btn-secondary" onClick={() => setView('home')}>
+            Volver al Inicio
+          </button>
+          
+          {!passed && currentQuiz?.failedQuestions?.length > 0 && (
+            <button className="btn-primary" onClick={startRetryFailed}>
+              Reintentar {currentQuiz.failedQuestions.length} fallidas
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -22,8 +22,13 @@ export default function QuizRunner() {
   const selectedAnswer = currentQuiz.answers[question.id];
 
   const handleSelect = (opt) => {
-    answerQuestion(question.id, opt);
+    if (!selectedAnswer) {
+      answerQuestion(question.id, opt);
+    }
   };
+
+  const isAnswered = !!selectedAnswer;
+  const isCorrect = selectedAnswer === question.correctAnswer;
 
   return (
     <div className="runner-container">
@@ -47,17 +52,43 @@ export default function QuizRunner() {
         <h2 className="question-text">{question.text}</h2>
 
         <div className="options-list">
-          {question.options.map((opt, i) => (
-            <button 
-              key={i} 
-              className={`option-btn ${selectedAnswer === opt ? 'selected' : ''}`}
-              onClick={() => handleSelect(opt)}
-            >
-              <span className="opt-letter">{String.fromCharCode(65 + i)}</span>
-              <span className="opt-text">{opt}</span>
-            </button>
-          ))}
+          {question.options.map((opt, i) => {
+            let className = 'option-btn';
+            if (isAnswered) {
+              if (opt === question.correctAnswer) className += ' correct';
+              else if (opt === selectedAnswer) className += ' wrong';
+              else className += ' disabled';
+            } else if (selectedAnswer === opt) {
+              className += ' selected';
+            }
+
+            return (
+              <button 
+                key={i} 
+                className={className}
+                onClick={() => handleSelect(opt)}
+                disabled={isAnswered}
+              >
+                <span className="opt-letter">{String.fromCharCode(65 + i)}</span>
+                <span className="opt-text">{opt}</span>
+              </button>
+            )
+          })}
         </div>
+
+        {isAnswered && (
+          <div className={`feedback-box ${isCorrect ? 'fb-correct' : 'fb-wrong'}`}>
+            <h3 className="fb-title">{isCorrect ? '¡Correcto!' : 'Incorrecto'}</h3>
+            {question.explanation && (
+              <div className="fb-expl">
+                <p style={{whiteSpace: 'pre-wrap'}}>{question.explanation}</p>
+              </div>
+            )}
+            {!question.explanation && !isCorrect && (
+              <p className="fb-expl">La respuesta correcta es: <strong>{question.correctAnswer}</strong></p>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="runner-footer">
@@ -70,11 +101,11 @@ export default function QuizRunner() {
         </button>
 
         {currentQuiz.currentQuestionIndex === currentQuiz.questions.length - 1 ? (
-          <button className="btn-primary" onClick={finishQuiz}>
+          <button className="btn-primary" onClick={finishQuiz} disabled={!isAnswered}>
             Finalizar Examen
           </button>
         ) : (
-          <button className="btn-primary" onClick={nextQuestion}>
+          <button className="btn-primary" onClick={nextQuestion} disabled={!isAnswered}>
             Siguiente →
           </button>
         )}

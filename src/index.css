@@ -364,6 +364,60 @@ html.light .option-btn.selected {
   color: var(--text-main);
 }
 
+/* Option States */
+.option-btn.correct {
+  background: rgba(0, 230, 118, 0.1);
+  border-color: var(--green);
+}
+.option-btn.correct .opt-letter {
+  background: var(--green);
+  color: #000;
+}
+.option-btn.wrong {
+  background: rgba(255, 82, 82, 0.1);
+  border-color: var(--red);
+}
+.option-btn.wrong .opt-letter {
+  background: var(--red);
+  color: #fff;
+}
+.option-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Feedback Box */
+.feedback-box {
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background: var(--bg-color);
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fb-correct {
+  border-color: var(--green);
+}
+.fb-wrong {
+  border-color: var(--red);
+}
+.fb-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.fb-correct .fb-title { color: var(--green); }
+.fb-wrong .fb-title { color: var(--red); }
+.fb-expl {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
 .runner-footer {
   display: flex;
   justify-content: space-between;

@@ -20,8 +20,8 @@ export const QuizProvider = ({ children }) => {
     answers: {}, // questionId -> answer
     startTime: null,
     endTime: null,
-    category: null // if 'category' type
-  });
+    category: null, // if 'category' type
+    failedQuestions: []
 
   // Calculate stats for home view
   const categories = {};
@@ -85,7 +85,8 @@ export const QuizProvider = ({ children }) => {
       answers: {},
       startTime: Date.now(),
       endTime: null,
-      category: null
+      category: null,
+      failedQuestions: []
     });
     setView('runner');
   };
@@ -99,7 +100,8 @@ export const QuizProvider = ({ children }) => {
       answers: {},
       startTime: Date.now(),
       endTime: null,
-      category: category
+      category: category,
+      failedQuestions: []
     });
     setView('runner');
   };
@@ -142,9 +144,12 @@ export const QuizProvider = ({ children }) => {
     };
 
     let correctCount = 0;
+    const failedQuestions = [];
     currentQuiz.questions.forEach(q => {
       if (currentQuiz.answers[q.id] === q.correctAnswer) {
         correctCount++;
+      } else {
+        failedQuestions.push(q);
       }
     });
     
@@ -154,8 +159,24 @@ export const QuizProvider = ({ children }) => {
     setHistory(newHistory);
     localStorage.setItem('quizHistory', JSON.stringify(newHistory));
     
-    setCurrentQuiz(prev => ({ ...prev, endTime }));
+    setCurrentQuiz(prev => ({ ...prev, endTime, failedQuestions }));
     setView('results');
+  };
+
+  const startRetryFailed = () => {
+    if (!currentQuiz.failedQuestions || currentQuiz.failedQuestions.length === 0) return;
+    
+    setCurrentQuiz(prev => ({
+      type: 'retry',
+      questions: [...prev.failedQuestions].sort(() => 0.5 - Math.random()),
+      currentQuestionIndex: 0,
+      answers: {},
+      startTime: Date.now(),
+      endTime: null,
+      category: prev.category,
+      failedQuestions: []
+    }));
+    setView('runner');
   };
 
   const toggleTheme = () => {
@@ -178,6 +199,7 @@ export const QuizProvider = ({ children }) => {
     nextQuestion,
     prevQuestion,
     finishQuiz,
+    startRetryFailed,
     totalQuestions: questionsData.length
   };
 
