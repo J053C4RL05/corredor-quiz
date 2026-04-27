@@ -583,7 +583,7 @@
       "115.18"
     ],
     "correctAnswer": "118.15",
-    "explanation": ""
+    "explanation": "\nPara encontrar el IPC del año anterior, se divide el IPC actual entre (1 + tasa de inflación).\nFórmula: IPC_anterior = IPC_actual / (1 + Inflación)\nCálculo: 120.92 / (1 + 0.0234) = 118.155 (se redondea a 118.15).\n**En Excel:**\n`=120.92 / (1 + 2.34%)`"
   },
   {
     "id": 43,
