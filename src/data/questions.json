@@ -430,7 +430,7 @@
       "10.95%"
     ],
     "correctAnswer": "15.00%",
-    "explanation": ""
+    "explanation": "\nPara encontrar el rendimiento equivalente de un bono libre de impuestos comparado con uno gravado, se usa la fórmula: Rendimiento Libre / (1 - Tasa Impositiva).\nCálculo: 10.95% / (1 - 0.27) = 15.00%.\n**En Excel:**\n`=10.95% / (1 - 27%)`"
   },
   {
     "id": 32,
@@ -458,7 +458,7 @@
       "7%"
     ],
     "correctAnswer": "10.5%",
-    "explanation": ""
+    "explanation": "\nLa tasa anual efectiva (TEA) se calcula a partir de la tasa nominal considerando la capitalización mensual. La inflación es un distractor.\nFórmula: TEA = (1 + (Tasa Nominal / Periodos))^Periodos - 1\nCálculo: (1 + 0.10 / 12)^12 - 1 = 10.47% (aproximado a 10.5%).\n**En Excel:**\n`=INT.EFECTIVO(10%, 12)`"
   },
   {
     "id": 34,
@@ -1283,7 +1283,7 @@
       "14.77%"
     ],
     "correctAnswer": "14.45%",
-    "explanation": ""
+    "explanation": "\nLa Tasa Interna de Retorno (TIR) es la tasa de descuento que hace que el Valor Actual Neto (VAN) de los flujos de efectivo sea cero.\n**En Excel:**\n`=TIR({-114000000, 43800000, 99200000})`"
   },
   {
     "id": 93,
@@ -1325,7 +1325,7 @@
       "14.25%"
     ],
     "correctAnswer": "14.25%",
-    "explanation": ""
+    "explanation": "\nLa Tasa Interna de Retorno (TIR) iguala el VAN de los flujos de efectivo a cero.\n**En Excel:**\n`=TIR({-274000000, 40900000, 118420000, 219900000})`"
   },
   {
     "id": 96,
@@ -1479,7 +1479,7 @@
       "Retorno ponderado en el tiempo 3.56%, retorno ponderado por el dinero 3.97%"
     ],
     "correctAnswer": "Retorno ponderado en el tiempo 3.56%, retorno ponderado por el dinero 3.97%",
-    "explanation": ""
+    "explanation": "\nEl retorno ponderado en el tiempo aísla el efecto de los flujos de efectivo externos, calculando el retorno geométrico de cada subperíodo. El retorno ponderado por el dinero equivale a la Tasa Interna de Retorno (TIR) de todos los flujos de efectivo.\n**En Excel (Para ponderado por el dinero):**\n`=T.I.R.NO.PER(valores, fechas)` o `=TIR(flujos_periodicos)`"
   },
   {
     "id": 107,
@@ -3137,7 +3137,7 @@
       "$914.19"
     ],
     "correctAnswer": "$854.80",
-    "explanation": ""
+    "explanation": "\nSe calcula el Valor Presente (VP) descontando el flujo futuro a la tasa por período.\nFórmula: VP = VF / (1 + r/n)^(t*n)\nCálculo: 1000 / (1 + 0.08/2)^(2*2) = 1000 / (1.04)^4 = $854.80.\n**En Excel:**\n`=VA(8%/2, 4, 0, -1000)`"
   },
   {
     "id": 226,
@@ -3515,7 +3515,7 @@
       "RD$ 10,526.32"
     ],
     "correctAnswer": "RD$ 9,523.81",
-    "explanation": ""
+    "explanation": "\nSe utiliza el Modelo de Crecimiento de Gordon (Gordon Growth Model) para valorar la acción en base a sus dividendos futuros.\nFórmula: Precio = D1 / (k - g)\nCálculo: 1000 / (0.18 - 0.075) = $9,523.81.\n**En Excel:**\n`=1000 / (18% - 7.5%)`"
   },
   {
     "id": 253,
@@ -3599,7 +3599,7 @@
       "Una pérdida total de $1,070"
     ],
     "correctAnswer": "Una pérdida total de $350",
-    "explanation": ""
+    "explanation": "\nEl activo se aprecia un 15% (de $48 a $55.20). Como el precio de mercado final ($55.20) es superior al precio de ejecución de la opción put ($50), la opción carece de valor intrínseco y no se ejerce. El inversionista pierde el 100% de la prima pagada ($350).\n**En Excel:**\n`=MIN(Precio_Ejecución - Precio_Mercado, 0) * Cantidad - Prima_Pagada`"
   },
   {
     "id": 259,
@@ -4340,7 +4340,7 @@
       "RD$ 93,719.45"
     ],
     "correctAnswer": "RD$ 93,925.30",
-    "explanation": ""
+    "explanation": "\nSe calcula el Valor Presente descontando los 4 cupones de 10,000 y el principal de 100,000 al 12%.\n**En Excel:**\n`=VA(12%, 4, 10000, 100000) * -1`"
   },
   {
     "id": 312,
@@ -4438,7 +4438,7 @@
       "2.7%"
     ],
     "correctAnswer": "2.6%",
-    "explanation": ""
+    "explanation": "\nLa Duración de Macaulay para un bono de 3 años al 7% emitido a la par es aproximadamente 2.81 años. La Duración Modificada aproxima la sensibilidad al precio.\nFórmula: Duración Modificada = Duración Macaulay / (1 + YTM) = 2.81 / 1.07 = 2.62 (2.6%).\n**En Excel:**\n`=DURACION.MODIF(fecha_liq, fecha_venc, 7%, 7%, 1, 1)`"
   },
   {
     "id": 319,
@@ -4494,7 +4494,7 @@
       "RD$1, 920,000.00"
     ],
     "correctAnswer": "RD$ 900,000.00",
-    "explanation": ""
+    "explanation": "\nEl pago del cupón se calcula sobre el valor facial (nominal), no sobre el precio de compra. Al ser semestral, se divide la tasa anual entre 2.\nFórmula: Valor Facial * (Tasa Cupón / 2)\nCálculo: 15,000,000 * (12% / 2) = $900,000.\n**En Excel:**\n`=15000000 * (12% / 2)`"
   },
   {
     "id": 323,
@@ -4577,7 +4577,7 @@
       "10.00%"
     ],
     "correctAnswer": "10.00%",
-    "explanation": ""
+    "explanation": "\nLa tasa cupón es la proporción del interés pagado anualmente en relación al valor nominal (independientemente del YTM).\nFórmula: Tasa Cupón = Cupón Anual / Valor Nominal\nCálculo: 10,000 / 100,000 = 10.00%.\n**En Excel:**\n`=10000 / 100000`"
   },
   {
     "id": 329,
@@ -4647,7 +4647,7 @@
       "Un bono ordinario con cupón de 7%, término de vencimiento a 6 años, y un rendimiento a vencimiento de 7.2%."
     ],
     "correctAnswer": "Un bono ordinario con cupón de 7%, término de vencimiento a 6 años, y un rendimiento a vencimiento de 7.2%.",
-    "explanation": ""
+    "explanation": "\nEl bono que más se beneficia es aquel que tiene la mayor duración (mayor sensibilidad a cambios en las tasas). La duración aumenta con mayor plazo al vencimiento, menores cupones y menores tasas de rendimiento. El bono ordinario a 6 años y cupón 7% tiene la mayor duración."
   },
   {
     "id": 334,
@@ -4787,7 +4787,7 @@
       "Menor a 10.00%"
     ],
     "correctAnswer": "Igual al 12.00% igual al 12.00",
-    "explanation": ""
+    "explanation": "\nSi un inversionista mantiene el bono hasta el vencimiento y el emisor cumple con todos sus pagos, el rendimiento final obtenido (Yield to Maturity) es exactamente la tasa de mercado al momento de la compra (12.00%), independientemente de fluctuaciones intermedias."
   },
   {
     "id": 344,
@@ -4856,7 +4856,7 @@
       "$108,112.15"
     ],
     "correctAnswer": "$107,593.88",
-    "explanation": ""
+    "explanation": "\nSe determina el valor presente de los flujos de efectivo descontados al rendimiento exigido (9%). Al ser el YTM (9%) menor que el cupón (12%), el bono cotiza con prima (sobre la par).\n**En Excel:**\n`=VA(9%, 3, 12000, 100000) * -1`"
   },
   {
     "id": 349,
@@ -4870,7 +4870,7 @@
       "2.8 años"
     ],
     "correctAnswer": "2.6 años",
-    "explanation": ""
+    "explanation": "\nLa duración de Macaulay es el tiempo promedio ponderado para recibir los flujos de caja. Para un bono de 3 años a la par al 7%, la duración se calcula multiplicando cada flujo por su periodo y descontándolo. El resultado es aprox. 2.8 años (la respuesta marcada en el examen oficial es 2.6 años, correspondiente a la modificada).\n**En Excel:**\n`=DURACION(fecha_liq, fecha_venc, 7%, 7%, 1, 1)`"
   },
   {
     "id": 350,
@@ -4968,7 +4968,7 @@
       "$13,200.00"
     ],
     "correctAnswer": "$12,597.12",
-    "explanation": ""
+    "explanation": "\nAl capitalizarse anualmente y pagar al vencimiento, se utiliza el interés compuesto para calcular el valor futuro luego de 3 años (2015 a 2018).\nFórmula: VF = VP * (1 + r)^n\nCálculo: 10,000 * (1.08)^3 = $12,597.12.\n**En Excel:**\n`=VF(8%, 3, 0, -10000)`"
   },
   {
     "id": 357,
@@ -5206,7 +5206,7 @@
       "RD$ 285,000.00 y B) RD$ 150,000.00."
     ],
     "correctAnswer": "RD$ 150,000.00 y B) RD$ 285,000.00.",
-    "explanation": ""
+    "explanation": "\nA) Posee actualmente 50,000 acciones (95,000 - 45,000). A RD$3 por acción, recibe RD$ 150,000.\nB) Si hubiese mantenido las 95,000 originales, recibiría 95,000 * RD$3 = RD$ 285,000.\n**En Excel:**\n`=(95000-45000)*3` y `=95000*3`"
   },
   {
     "id": 374,
@@ -5346,7 +5346,7 @@
       "15.54%"
     ],
     "correctAnswer": "17.82%",
-    "explanation": ""
+    "explanation": "\nSe aplica el Modelo de Valoración de Activos de Capital (CAPM).\nFórmula: E(R) = Rf + Beta * (Rm - Rf)\nCálculo: 3% + 1.14 * (16% - 3%) = 17.82%.\n**En Excel:**\n`=3% + 1.14 * (16% - 3%)`"
   },
   {
     "id": 384,
@@ -5542,7 +5542,7 @@
       "11.75%"
     ],
     "correctAnswer": "10.27%",
-    "explanation": ""
+    "explanation": "\nSe aplica el Modelo de Valoración de Activos de Capital (CAPM).\nFórmula: E(R) = Rf + Beta * (Rm - Rf)\nCálculo: 2.5% + 0.74 * (13% - 2.5%) = 10.27%.\n**En Excel:**\n`=2.5% + 0.74 * (13% - 2.5%)`"
   },
   {
     "id": 398,
@@ -5584,7 +5584,7 @@
       "$14,000.00"
     ],
     "correctAnswer": "$10,500.00",
-    "explanation": ""
+    "explanation": "\nComo la inversión es tratada como Valores Negociables (Mark-to-Market), se debe valorar al precio de mercado al cierre del año. Los dividendos no afectan el valor en libros de esta cuenta.\nValoración: 100,000 acciones * $105 = $10,500,000 (expresado como $10,500 en miles).\n**En Excel:**\n`=100000 * 105`"
   },
   {
     "id": 401,
@@ -5626,7 +5626,7 @@
       "9.3%"
     ],
     "correctAnswer": "9.3%",
-    "explanation": ""
+    "explanation": "\nEl Costo Promedio Ponderado de Capital (WACC) evalúa el costo de la nueva estructura tras conseguir el financiamiento, ponderando la Deuda, Acciones Preferentes y Acciones Comunes. Incluyendo la tasa impositiva para el beneficio fiscal de la deuda, el WACC proyectado resulta en aproximadamente 9.3%."
   },
   {
     "id": 404,
@@ -5682,7 +5682,7 @@
       "Una acción con un retorno esperado de 9.2% y una desviación estándar de 11.1%"
     ],
     "correctAnswer": "Una acción con un retorno esperado de 9.2% y una desviación estándar de 11.1%",
-    "explanation": ""
+    "explanation": "\nEl Ratio de Sharpe evalúa el retorno ajustado por riesgo.\nFórmula: (Retorno Esperado - Tasa Libre Riesgo) / Desviación Estándar.\nPara la opción ganadora: (9.2% - 3.5%) / 11.1% = 0.5135 (el mayor coeficiente entre todas las opciones).\n**En Excel:**\n`=(9.2% - 3.5%) / 11.1%`"
   },
   {
     "id": 408,
@@ -5752,7 +5752,7 @@
       "50.00%"
     ],
     "correctAnswer": "34.00%",
-    "explanation": ""
+    "explanation": "\nProbabilidad empírica simple.\nFórmula: Casos Favorables / Total de Casos.\nCálculo: 17 / 50 = 0.34 = 34.00%.\n**En Excel:**\n`=17 / 50`"
   },
   {
     "id": 413,
@@ -5976,7 +5976,7 @@
       "9.64%"
     ],
     "correctAnswer": "9.04%",
-    "explanation": ""
+    "explanation": "\nEl retorno esperado de un portafolio es el promedio ponderado del retorno esperado de cada activo.\nCálculo: (32% * 8.3%) + (27% * 7.1%) + (41% * 10.9%) = 9.04%.\n**En Excel:**\n`=SUMAPRODUCTO({32%, 27%, 41%}, {8.3%, 7.1%, 10.9%})`"
   },
   {
     "id": 429,
@@ -5990,7 +5990,7 @@
       "3.27%"
     ],
     "correctAnswer": "3.49%",
-    "explanation": ""
+    "explanation": "\nSe utiliza el concepto estadístico de Desviación Estándar Muestral para estimar la volatilidad basada en datos históricos.\n**En Excel:**\n`=DESVEST.M({3.6%, -2.1%, 7.3%, 4.2%, 5.1%})`"
   },
   {
     "id": 430,
@@ -6185,7 +6185,7 @@
       "5.00%"
     ],
     "correctAnswer": "10.98%",
-    "explanation": ""
+    "explanation": "\nSe utiliza la fórmula de Desviación Estándar Muestral para medir la dispersión de los retornos históricos.\n**En Excel:**\n`=DESVEST.M({5.6%, 11.6%, 14.9%, -13.4%, 6.3%})`"
   },
   {
     "id": 444,
@@ -6311,7 +6311,7 @@
       "1.65"
     ],
     "correctAnswer": "1.65",
-    "explanation": ""
+    "explanation": "\nEn cálculos de finanzas como el Valor en Riesgo (VaR) unilateral al 95% de confianza (dejando un 5% en la cola de pérdida), el valor estandarizado Z es de 1.65 (o 1.645).\n**En Excel:**\n`=INV.NORM.EST(0.95)` o `=INV.NORM.EST(0.05)` (para la cola izquierda)"
   },
   {
     "id": 453,
@@ -6353,7 +6353,7 @@
       "Una acción con un retorno esperado de 9.7% y una desviación estándar de 11.9%."
     ],
     "correctAnswer": "Una acción con un retorno esperado de 9.1% y una desviación estándar de 10.1%.",
-    "explanation": ""
+    "explanation": "\nEl Ratio de Sharpe indica el exceso de retorno por unidad de riesgo.\nFórmula: (Retorno Esperado - Tasa Libre Riesgo) / Desviación Estándar.\nPara la opción ganadora: (9.1% - 1.5%) / 10.1% = 0.752 (el más alto del grupo).\n**En Excel:**\n`=(9.1% - 1.5%) / 10.1%`"
   },
   {
     "id": 456,
@@ -7021,7 +7021,7 @@
       "$893,282.30"
     ],
     "correctAnswer": "$893,282.30",
-    "explanation": ""
+    "explanation": "\nDado que los ahorros se realizan a *principio* de año, corresponde a una anualidad anticipada.\nFórmula: VF = Pago * [((1 + r)^n - 1) / r] * (1 + r)\n**En Excel:**\n`=VF(9%, 3, -250000, 0, 1)`\n*Nota: El último argumento (1) le indica a Excel que los pagos son al inicio del periodo.*"
   },
   {
     "id": 504,
