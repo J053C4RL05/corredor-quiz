@@ -106,30 +106,23 @@ export default function QuizRunner() {
               </button>
             </div>
 
-            {showViewer && (() => {
-              const cleanText = question.text.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]/g, ' ').replace(/\s+/g, ' ').trim();
-              const searchSnippet = cleanText.substring(0, 45).trim();
-              const searchParam = encodeURIComponent('"' + searchSnippet + '"');
-              const pdfUrl = `${selectedPdf}#search=${searchParam}`;
-
-              return (
-                <div className="pdf-viewer-container">
-                  <div className="pdf-viewer-header">
-                    <span style={{fontSize: '13px'}}>Selecciona documento:</span>
-                    <select 
-                      className="pdf-select"
-                      value={selectedPdf} 
-                      onChange={(e) => setSelectedPdf(e.target.value)}
-                    >
-                      {pdfOptions.map(opt => (
-                        <option key={opt.value} value={opt.value}>{opt.label}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <iframe src={pdfUrl} className="pdf-iframe" title="Visor de PDF"></iframe>
+            {showViewer && (
+              <div className="pdf-viewer-container">
+                <div className="pdf-viewer-header">
+                  <span style={{fontSize: '13px'}}>Selecciona documento:</span>
+                  <select 
+                    className="pdf-select"
+                    value={selectedPdf} 
+                    onChange={(e) => setSelectedPdf(e.target.value)}
+                  >
+                    {pdfOptions.map(opt => (
+                      <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    ))}
+                  </select>
                 </div>
-              );
-            })()}
+                <iframe src={selectedPdf} className="pdf-iframe" title="Visor de PDF"></iframe>
+              </div>
+            )}
           </div>
         )}
       </div>
