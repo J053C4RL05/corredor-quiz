@@ -1,0 +1,450 @@
+[
+  {
+    "id": 31,
+    "category": "Economía",
+    "source": "PARTE 2 - Q135",
+    "text": "Usted es el Tesorero de la Empresa ZT, S.A, la cual al 01 de enero del 2014 presenta un excedente de caja de RD$ 10,000,000.00. Después de ver varias opciones usted ha decidido invertir en un bono del Ministerio de Hacienda de la República Dominicana a una tasa de un 10.95% libre de impuesto sobre la renta, asumiendo que la tasa de tributación es de un 27.00%. ¿Cuál sería la tasa de rendimiento equivalente que usted necesitaría para realizar la misma inversión en un bono grabado?",
+    "options": [
+      "15.00%",
+      "13.91%",
+      "4.05%",
+      "10.95%"
+    ],
+    "correctAnswer": "15.00%",
+    "explanation": ""
+  },
+  {
+    "id": 33,
+    "category": "Economía",
+    "source": "PARTE 2 - Q171",
+    "text": "Si se considera una inflación del 3%, la tasa anual efectiva de un certificado de depósito con una tasa de un 10%, capitalizable mensualmente es:",
+    "options": [
+      "10.5%",
+      "10.8%",
+      "7.2%",
+      "7%"
+    ],
+    "correctAnswer": "10.5%",
+    "explanation": ""
+  },
+  {
+    "id": 92,
+    "category": "Finanzas Corporativas",
+    "source": "PARTE 2 - Q54",
+    "text": "Constructora Arieles está evaluando un proyecto de viviendas. Determina que requerirá una inversión inicial de $114,000,000. El primer año tendrá un flujo positivo de $43,800,000, y el segundo año, cuando se hayan concluido las ventas de las unidades habitacionales, tendrá un flujo positivo de $99,200,000. ¿Cuál es la tasa interna de retorno de este proyecto?",
+    "options": [
+      "15.19%",
+      "14.45%",
+      "14.25%",
+      "14.77%"
+    ],
+    "correctAnswer": "14.45%",
+    "explanation": ""
+  },
+  {
+    "id": 95,
+    "category": "Finanzas Corporativas",
+    "source": "PARTE 2 - Q176",
+    "text": "El Consorcio Villas del Mar está evaluando un proyecto de viviendas turísticas. Determina que requerirá una inversión inicial de $274,000,000. El primer año tendrá un flujo positivo de $40,900,000; el segundo año un flujo positivo de $118,420,000; y en el tercer año, cuando se hayan concluido las ventas de las viviendas turísticas, tendrá un flujo positivo de $219,900,000. ¿Cuál es la tasa interna de retorno de este proyecto?",
+    "options": [
+      "14.45%",
+      "14.77%",
+      "15.19%",
+      "14.25%"
+    ],
+    "correctAnswer": "14.25%",
+    "explanation": ""
+  },
+  {
+    "id": 106,
+    "category": "Gestión Portafolio",
+    "source": "PARTE 2 - Q110",
+    "text": "273. A continuación se presentan las transacciones de un portafolio, y la valoración del mismo inmediatamente después del momento de cada retiro (-) o depósito (+).Dadas estas informaciones, estimar el retorno ponderado en el tiempo, y el retorno ponderado por el dinero:",
+    "options": [
+      "Retorno ponderado en el tiempo 3.74%, retorno ponderado por el dinero 3.56%",
+      "Retorno ponderado en el tiempo 3.56%, retorno ponderado por el dinero 3.74%",
+      "Retorno ponderado en el tiempo 3.97%, retorno ponderado por el dinero 3.74%",
+      "Retorno ponderado en el tiempo 3.56%, retorno ponderado por el dinero 3.97%"
+    ],
+    "correctAnswer": "Retorno ponderado en el tiempo 3.56%, retorno ponderado por el dinero 3.97%",
+    "explanation": ""
+  },
+  {
+    "id": 225,
+    "category": "Matemáticas Financieras",
+    "source": "PARTE 3 - Q55",
+    "text": "Dentro de dos años se recibirá un pago de $1,000.00 Si se considera una tasa anual de un 8%, capitalizable semestralmente, el valor presente de ese flujo es:",
+    "options": [
+      "$925.93",
+      "$857.34",
+      "$854.80",
+      "$914.19"
+    ],
+    "correctAnswer": "$854.80",
+    "explanation": ""
+  },
+  {
+    "id": 252,
+    "category": "Operaciones Procedimientos",
+    "source": "PARTE 2 - Q166",
+    "text": "Roberto Mesa, corredor en el Puesto de Bolsa Delta, prevé que las acciones de “Auto India Dominicana”(AID), las cuales tienen un valor actual de mercado de RD$ 8,100, pagarán RD$ 1,000 en dividendos por cada acción común dentro de 12 meses, y se estima que los mismos crezcan a un ritmo de un 7.5% anuales en los años siguientes. Si se considera una tasa libre de riesgo de un 4%, y una tasa de descuento de 18%. ¿Cuál es el valor intrínseco de las acciones de AID?",
+    "options": [
+      "RD$ 8,707.50",
+      "RD$7,142.86",
+      "RD$ 9,523.81",
+      "RD$ 10,526.32"
+    ],
+    "correctAnswer": "RD$ 9,523.81",
+    "explanation": ""
+  },
+  {
+    "id": 258,
+    "category": "Otros Instrumentos",
+    "source": "PARTE 1 - Q3",
+    "text": "Un inversionista paga $350 por 100 opciones put, con un precio de ejecución de $50 y vencimiento dentro de 3 meses. El activo subyacente tiene actualmente un valor de $48 por acción. En los próximos tres meses, el activo subyacente se aprecia en un 15%. ¿Cuál ha sido el resultado neto para inversionista de esta operación?",
+    "options": [
+      "Una pérdida de $7.2 por acción, o sea, una pérdida total de $720",
+      "Una pérdida total de $350",
+      "Una ganancia de $3.7 por acción, es decir, $370",
+      "Una pérdida total de $1,070"
+    ],
+    "correctAnswer": "Una pérdida total de $350",
+    "explanation": ""
+  },
+  {
+    "id": 311,
+    "category": "Renta Fija",
+    "source": "PARTE 1 - Q17",
+    "text": "Usted tiene en su portafolio un bono con un plazo residual de 4 años, un valor nominal de RD$ 100,000.00 y un pago de cupón anual de RD$ 10,000.00, ¿Cuál es el precio del bono si su rendimiento a vencimiento (Yield to Maturity) es de un 12.00%?",
+    "options": [
+      "RD$ 93,925.30",
+      "RD$ 93,790.21",
+      "RD$ 106,339.73",
+      "RD$ 93,719.45"
+    ],
+    "correctAnswer": "RD$ 93,925.30",
+    "explanation": ""
+  },
+  {
+    "id": 318,
+    "category": "Renta Fija",
+    "source": "PARTE 1 - Q118",
+    "text": "Usted tiene en su portafolio un bono que se vende a un valor par de RD$ 100,000.00 con un plazo residual de 3 años y una tasa cupón anual de 7.00% anual ¿Cuál es la Duración Modificada del bono?",
+    "options": [
+      "2.8%",
+      "2.6%",
+      "2.9%",
+      "2.7%"
+    ],
+    "correctAnswer": "2.6%",
+    "explanation": ""
+  },
+  {
+    "id": 322,
+    "category": "Renta Fija",
+    "source": "PARTE 1 - Q167",
+    "text": "En fecha 01 de enero del 2014 usted compró en mercado secundario un bono corporativo de un emisor local con valor facial de RD$ 15,000,000.00, el cual paga un cupón de un 12.00% pagadero semestralmente y tiene un vencimiento de 7 años. Usted compró el bono con rendimiento de un 11.50%. ¿Cuál sería el monto que enviará el emisor para que se le acredite a su cuenta al momento del pago del primer cupón?",
+    "options": [
+      "RD$ 900,000.00",
+      "RD$ 1,725,000.00",
+      "RD$ 862,500.00",
+      "RD$1, 920,000.00"
+    ],
+    "correctAnswer": "RD$ 900,000.00",
+    "explanation": ""
+  },
+  {
+    "id": 328,
+    "category": "Renta Fija",
+    "source": "PARTE 2 - Q37",
+    "text": "Usted tiene en su portafolio un bono con un plazo residual de 4 años con un valor nominal de RD$ 100,000.00 y un pago de cupón anual de RD$ 10,000.00 y el rendimiento a vencimiento (Yield to Maturity) es de un 12.00%, ¿Cuál es la tasa cupón del bono?",
+    "options": [
+      "8.00%",
+      "12.00%",
+      "11.00%",
+      "10.00%"
+    ],
+    "correctAnswer": "10.00%",
+    "explanation": ""
+  },
+  {
+    "id": 333,
+    "category": "Renta Fija",
+    "source": "PARTE 2 - Q77",
+    "text": "¿Cuál de los siguientes instrumentos de renta fija se beneficiaría más de una caída de las tasas de interés a lo largo de la curva por un 1%?",
+    "options": [
+      "Un bono cero cupón con vencimiento en 6 meses y un rendimiento a vencimiento de 3%.",
+      "Un bono ordinario con cupón de 9%, término de vencimiento a 4 años, y un rendimiento a vencimiento de 9%.",
+      "Un bono ordinario con cupón de 10%, término de vencimiento a 5 años, y un rendimiento a vencimiento de 9%.",
+      "Un bono ordinario con cupón de 7%, término de vencimiento a 6 años, y un rendimiento a vencimiento de 7.2%."
+    ],
+    "correctAnswer": "Un bono ordinario con cupón de 7%, término de vencimiento a 6 años, y un rendimiento a vencimiento de 7.2%.",
+    "explanation": ""
+  },
+  {
+    "id": 337,
+    "category": "Renta Fija",
+    "source": "PARTE 2 - Q124",
+    "text": "Usted tiene en su portafolio un bono con un plazo residual de 4 años, un valor nominal de RD$ 100,000.00 y un pago de cupón anual de RD$ 10,000.00, ¿Cuál es el precio del bono si su rendimiento a vencimiento (Yield to Maturity) es de un 12%?",
+    "options": [
+      "RD$ 93,719.45",
+      "RD$ 93,925.30",
+      "RD$ 106,339.73",
+      "RD$ 93,790.21"
+    ],
+    "correctAnswer": "RD$ 93,925.30",
+    "explanation": ""
+  },
+  {
+    "id": 343,
+    "category": "Renta Fija",
+    "source": "PARTE 2 - Q185",
+    "text": "El Sr. Alfredo compró un bono corporativo que tenía un cupón de un 10.00%, la tasa de mercado al momento de la compra del bono era de un 12.00%. Si el Sr. Alfredo mantiene su bono hasta el vencimiento y el emisor mantiene su capacidad de pago, entonces el rendimiento de sus inversiones será:",
+    "options": [
+      "Igual al 12.00% igual al 12.00",
+      "Igual al 10.00%",
+      "Menor a 12.00%",
+      "Menor a 10.00%"
+    ],
+    "correctAnswer": "Igual al 12.00% igual al 12.00",
+    "explanation": ""
+  },
+  {
+    "id": 348,
+    "category": "Renta Fija",
+    "source": "PARTE 3 - Q41",
+    "text": "Lourdes Batista, corredor del Puesto de Bolsa Kappa, evalúa un bono ordinario con un vencimiento en 3 años, un cupón de 12% pagadero anualmente, y un valor par de $100,000 DOP. Cuál debe ser el precio del bono para reflejar rendimiento a vencimiento de 9%?",
+    "options": [
+      "$106,157.65",
+      "$107,593.88",
+      "$107,481.93",
+      "$108,112.15"
+    ],
+    "correctAnswer": "$107,593.88",
+    "explanation": ""
+  },
+  {
+    "id": 349,
+    "category": "Renta Fija",
+    "source": "PARTE 3 - Q51",
+    "text": "Usted tiene en su portafolio un bono que se vende a un valor par de RD$ 100,000.00 con un plazo residual de 3 años y una tasa cupón anual de 7.00% anual ¿Cuál es la Duración de Macaulay del bono?",
+    "options": [
+      "2.9 años",
+      "2.6 años",
+      "2.7 años",
+      "2.8 años"
+    ],
+    "correctAnswer": "2.6 años",
+    "explanation": ""
+  },
+  {
+    "id": 356,
+    "category": "Renta Fija",
+    "source": "PARTE 3 - Q114",
+    "text": "Suponga que en fecha 01 de enero del 2015 usted compra RD$ 10,000.00 de un bono que paga a una tasa de un 8.00% capitalizable anualmente y vence 01 de enero del 2018. ¿Qué cantidad deberán pagarle al vencimiento del bono?",
+    "options": [
+      "$12,400.00",
+      "$12,597.12",
+      "$13,604.89",
+      "$13,200.00"
+    ],
+    "correctAnswer": "$12,597.12",
+    "explanation": ""
+  },
+  {
+    "id": 373,
+    "category": "Renta Variable",
+    "source": "PARTE 1 - Q162",
+    "text": "La Sra. Antonia Pérez compró 95,000 acciones comunes de la empresa XY en fecha 31 de enero del 2012 a un precio de RD$ 150.00 por acción. El 20 de febrero del mismo año vendió 45,000 acciones a un precio de RD$ 151.00 por acción. Recientemente la empresa decidió declarar un dividendo de RD$ 3.00 por acción. A) ¿Cuál será el monto que recibirá la Sra. Antonia por concepto de dividendos por su posición actual? B) ¿Cuánto recibiría hoy si hubiese mantenido su posición inicial de 95, 000 acciones?",
+    "options": [
+      "RD$ 150,000.00 y B) RD$ 285,000.00.",
+      "RD$ 135,000.00 y B) RD$ 285,000.00.",
+      "RD$ 135,000.00 y B) RD$ 150,000.00.",
+      "RD$ 285,000.00 y B) RD$ 150,000.00."
+    ],
+    "correctAnswer": "RD$ 150,000.00 y B) RD$ 285,000.00.",
+    "explanation": ""
+  },
+  {
+    "id": 383,
+    "category": "Renta Variable",
+    "source": "PARTE 2 - Q73",
+    "text": "Miguel Márquez, corredor en el Puesto de Bolsa Sigma debe estimar el costo de oportunidad de las acciones comunes de “Comerciantes del Caribe S.A.” (CC). En tal efecto, el Sr. Márquez identifica una tasa libre de riesgo equivalente a 3%, un retorno esperado para el mercado de 16%, y un beta para CC de 1.14. Adicionalmente el corredor identifica un rendimiento anual histórico de las acciones de CC de 14%. Según la información recolectada, el retorno esperado de CC según el CAPM equivale a:",
+    "options": [
+      "14.40%",
+      "21.24%",
+      "17.82%",
+      "15.54%"
+    ],
+    "correctAnswer": "17.82%",
+    "explanation": ""
+  },
+  {
+    "id": 397,
+    "category": "Renta Variable",
+    "source": "PARTE 2 - Q200",
+    "text": "Gerardo Gutiérrez, corredor en el Puesto de Bolsa Sigma debe estimar el costo de oportunidad de las acciones comunes de “Comerciantes de las Antillas Menores, S.A.” (CAM). En tal efecto, el Sr. Gutiérrez identifica una tasa libre de riesgo equivalente a 2.5%, un retorno esperado para el mercado de 13%, y un beta para CAM de 0.74. Adicionalmente el corredor identifica un rendimiento histórico de las acciones de CC de 15%. Según la información recolectada, el retorno esperado de CAM según el CAPM equivale a:",
+    "options": [
+      "10.67%",
+      "10.27%",
+      "15.54%",
+      "11.75%"
+    ],
+    "correctAnswer": "10.27%",
+    "explanation": ""
+  },
+  {
+    "id": 400,
+    "category": "Renta Variable",
+    "source": "PARTE 3 - Q39",
+    "text": "El 31 de diciembre de 2012 Empresa Matríz, S.A. ( EMSA) compro 100,000 acciones de compañía adquirida SA. ( CASA) e un precio de $140 por acción. Durante el año, CASA pagó $ 30 por concepto de dividendos. Al final de 2013, el valor de las acciones de CASA era de $ 105. Si la inversión es tratada como inversiones en Valores Negociables. ¿Qué valor debiera tener en el Estado de Situación EMSA?",
+    "options": [
+      "$11,000.00",
+      "$17,000.00",
+      "$10,500.00",
+      "$14,000.00"
+    ],
+    "correctAnswer": "$10,500.00",
+    "explanation": ""
+  },
+  {
+    "id": 403,
+    "category": "Renta Variable",
+    "source": "PARTE 3 - Q49",
+    "text": "La cadena Hotelera Romano Resort está considerando construir y operar un nuevo hotel en Puerto Vallarta. Para ello requerirá de $ 400MM, los cuales, si decide desarrollar el proyecto, obtendrá mediante una emisión de deuda de $ 250MM a una tasa de un 6% y una emisión de acciones comunes a por $ 150MM. En estos momentos la estructura de capital de la empresa es de unos $1,200MM en activos, divididos en $50MM en deuda que fue emitida hace 4 años al 8%, $600MM en acciones comunes y $ 100MM en acciones preferentes. Se estima que el retorno requerido por los tenedores de acciones comunes es de 14.1%. Sus acciones preferentes pagan un diciendo fijo de un 9.5%. La tasa impositiva a la cual está expuesta esta empresa es de un 25%. Estimar el WACC",
+    "options": [
+      "8.8%",
+      "9.0%",
+      "8.0%",
+      "9.3%"
+    ],
+    "correctAnswer": "9.3%",
+    "explanation": ""
+  },
+  {
+    "id": 407,
+    "category": "Riesgos",
+    "source": "PARTE 1 - Q13",
+    "text": "A la luz del Ratio de Sharpe, ¿cuál de los siguientes instrumentos financieros tiene mejor calidad? Se asume una tasa libre de riesgo de 3.5%.",
+    "options": [
+      "Una acción con un retorno esperado de 7.9% y una desviación estándar de 8.8%",
+      "Una acción con un retorno esperado de 8.6% y una desviación estándar de 11.4%",
+      "Una acción con un retorno esperado de 8.2% y una desviación estándar de 10.9%",
+      "Una acción con un retorno esperado de 9.2% y una desviación estándar de 11.1%"
+    ],
+    "correctAnswer": "Una acción con un retorno esperado de 9.2% y una desviación estándar de 11.1%",
+    "explanation": ""
+  },
+  {
+    "id": 412,
+    "category": "Riesgos",
+    "source": "PARTE 1 - Q50",
+    "text": "Un experimento que tiene tres resultados es repetido 50 veces y se ve que E1 aparece 20 veces, E2 13 veces y E3 17 veces. ¿Cuál es la probabilidad de ocurrencia que tiene el E3",
+    "options": [
+      "40.00%",
+      "34.00%",
+      "26.00%",
+      "50.00%"
+    ],
+    "correctAnswer": "34.00%",
+    "explanation": ""
+  },
+  {
+    "id": 421,
+    "category": "Riesgos",
+    "source": "PARTE 1 - Q92",
+    "text": "Gerardo Gutiérrez, corredor en el Puesto de Bolsa Sigma debe estimar el costo de oportunidad de las acciones comunes de “Comerciantes de las Antillas Menores, S.A.” (CAM). En tal efecto, el Sr. Gutiérrez identifica una tasa libre de riesgo equivalente a 2.5%, un retorno esperado para el mercado de 13%, y un beta para CAM de 0.74. Adicionalmente el corredor identifica un rendimiento histórico de las acciones de CC de 15%. Según la información recolectada, el retorno esperado de CAM según el CAPM equivale a",
+    "options": [
+      "15.54%",
+      "11.75%",
+      "10.27%",
+      "10.67%"
+    ],
+    "correctAnswer": "10.27%",
+    "explanation": ""
+  },
+  {
+    "id": 428,
+    "category": "Riesgos",
+    "source": "PARTE 1 - Q151",
+    "text": "Un portafolio de inversiones está compuesto por las acciones de 3 empresas. Andorra tiene un retorno esperado de 8.3%, Barcelona tiene un retorno esperado de 7.1%, Cataluña tiene un retorno esperado de 10.9%. Si el peso de las acciones de las 3 empresas en el portafolio es de 32%, 27%, y 41% respectivamente, ¿Cuál es el retorno esperado del portafolio? seleccione una:",
+    "options": [
+      "9.04%",
+      "8.66%",
+      "8.98%",
+      "9.64%"
+    ],
+    "correctAnswer": "9.04%",
+    "explanation": ""
+  },
+  {
+    "id": 429,
+    "category": "Riesgos",
+    "source": "PARTE 1 - Q161",
+    "text": "Un fondo de inversiones ha tenidos los siguientes retornos en los últimos años: 3.6%, -2.1%, 7.3%, 4.2%, 5.1%. en razón de lo anterior, la desviación estándar de los retornos del fondo es aproximadamente de:",
+    "options": [
+      "4.61%",
+      "3.49%",
+      "4.18%",
+      "3.27%"
+    ],
+    "correctAnswer": "3.49%",
+    "explanation": ""
+  },
+  {
+    "id": 443,
+    "category": "Riesgos",
+    "source": "PARTE 2 - Q88",
+    "text": "Calcular la desviación estándar de un fondo de inversiones, que ha tenido los siguientes retornos en los últimos años: 5.6%, 11.6%, 14.9%, -13.4%, 6.3%",
+    "options": [
+      "11.09%",
+      "10.98%",
+      "7.24%",
+      "5.00%"
+    ],
+    "correctAnswer": "10.98%",
+    "explanation": ""
+  },
+  {
+    "id": 452,
+    "category": "Riesgos",
+    "source": "PARTE 2 - Q109",
+    "text": "Qué valor Z se utiliza para un nivel de confianza de 95%",
+    "options": [
+      "1.68",
+      "1.28",
+      "2.33",
+      "1.65"
+    ],
+    "correctAnswer": "1.65",
+    "explanation": ""
+  },
+  {
+    "id": 455,
+    "category": "Riesgos",
+    "source": "PARTE 2 - Q134",
+    "text": "En función del Ratio de Sharpe, ¿cuál de los siguientes instrumentos financieros tiene mejor calidad? Se asume una tasa libre de riesgo de 1.5%.",
+    "options": [
+      "Una acción con un retorno esperado de 9.1% y una desviación estándar de 10.1%.",
+      "Una acción con un retorno esperado de 8.7% y una desviación estándar de 14.4%.",
+      "Una acción con un retorno esperado de 7.4% y una desviación estándar de 8.8%.",
+      "Una acción con un retorno esperado de 9.7% y una desviación estándar de 11.9%."
+    ],
+    "correctAnswer": "Una acción con un retorno esperado de 9.1% y una desviación estándar de 10.1%.",
+    "explanation": ""
+  },
+  {
+    "id": 503,
+    "category": "Sin Clasificar",
+    "source": "PARTE 1 - Q159",
+    "text": "Un inversionista ahorrara $250,000 anuales a principio de cada año, durante 3 años, en un certificado de depósito que tiene una tasa anual efectiva de 9%, cuanto habrá acumulado al cabo de 3 años?",
+    "options": [
+      "$323,757.25",
+      "$891,075.00",
+      "$817,500.00",
+      "$893,282.30"
+    ],
+    "correctAnswer": "$893,282.30",
+    "explanation": ""
+  }
+]
