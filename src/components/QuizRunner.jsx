@@ -5,9 +5,10 @@ export default function QuizRunner() {
   const { currentQuiz, answerQuestion, nextQuestion, prevQuestion, finishQuiz, setView } = useQuiz();
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [showViewer, setShowViewer] = useState(false);
-  const [selectedPdf, setSelectedPdf] = useState('/pdfs/Compedio de Estudio - Examen Corredor de Valores.pdf');
+  const [selectedPdf, setSelectedPdf] = useState('/pdfs/EXAMEN PREGUNTAS Y RESPUESTAS 2024.pdf');
 
   const pdfOptions = [
+    { label: 'Examen Resuelto 2024', value: '/pdfs/EXAMEN PREGUNTAS Y RESPUESTAS 2024.pdf' },
     { label: 'Compendio de Estudio', value: '/pdfs/Compedio de Estudio - Examen Corredor de Valores.pdf' },
     { label: 'Ley 155-17', value: '/pdfs/Ley-No.-155-17.pdf' },
     { label: 'Ley 249-17', value: '/pdfs/Ley-No.-249-17.pdf' },
@@ -105,23 +106,30 @@ export default function QuizRunner() {
               </button>
             </div>
 
-            {showViewer && (
-              <div className="pdf-viewer-container">
-                <div className="pdf-viewer-header">
-                  <span style={{fontSize: '13px'}}>Selecciona documento:</span>
-                  <select 
-                    className="pdf-select"
-                    value={selectedPdf} 
-                    onChange={(e) => setSelectedPdf(e.target.value)}
-                  >
-                    {pdfOptions.map(opt => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
-                    ))}
-                  </select>
+            {showViewer && (() => {
+              const cleanText = question.text.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]/g, ' ').replace(/\s+/g, ' ').trim();
+              const searchSnippet = cleanText.substring(0, 45).trim();
+              const searchParam = encodeURIComponent('"' + searchSnippet + '"');
+              const pdfUrl = `${selectedPdf}#search=${searchParam}`;
+
+              return (
+                <div className="pdf-viewer-container">
+                  <div className="pdf-viewer-header">
+                    <span style={{fontSize: '13px'}}>Selecciona documento:</span>
+                    <select 
+                      className="pdf-select"
+                      value={selectedPdf} 
+                      onChange={(e) => setSelectedPdf(e.target.value)}
+                    >
+                      {pdfOptions.map(opt => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <iframe src={pdfUrl} className="pdf-iframe" title="Visor de PDF"></iframe>
                 </div>
-                <iframe src={selectedPdf} className="pdf-iframe" title="Visor de PDF"></iframe>
-              </div>
-            )}
+              );
+            })()}
           </div>
         )}
       </div>
